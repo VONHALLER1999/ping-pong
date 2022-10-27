@@ -11,4 +11,6 @@ server.on("message", function (message, remote) {
   server.send(reply, 0, reply.length, remote.port, remote.address);
 });
 
-server.bind(6790, "0.0.0.0");
+server.bind(8080, "0.0.0.0");
+
+console.log("server is live")
